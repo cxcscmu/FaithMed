@@ -1,0 +1,2109 @@
+[
+  {
+    "trajectory": "all",
+    "Clinical_Reasoning_Completeness": 0.7921,
+    "Search_Citation_Faithfulness": 0.6347,
+    "Factual_Accuracy": 0.6455,
+    "Safety_Limitations_Epistemic": 0.3875
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_102",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.6
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_105",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.8,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_10",
+    "Clinical_Reasoning_Completeness": 0.4286,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_106",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_12",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_121",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_11",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": 0.4,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_128",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_130",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_134",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 0.3333,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_139",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_158",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_160",
+    "Clinical_Reasoning_Completeness": 0.5,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_162",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 0.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_170",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_174",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.8,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.1667
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_18",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.4,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_181",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 0.3333,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_188",
+    "Clinical_Reasoning_Completeness": 0.8,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_186",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.3333
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_190",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.1667
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_191",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_193",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_192",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_202",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_194",
+    "Clinical_Reasoning_Completeness": 0.5,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_214",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_205",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": null,
+    "Safety_Limitations_Epistemic": null
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_224",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_216",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.5,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_225",
+    "Clinical_Reasoning_Completeness": 0.1667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_222",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_232",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_227",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.0,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_237",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_238",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_251",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_25",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_243",
+    "Clinical_Reasoning_Completeness": 0.5,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_257",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_271",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.8,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_267",
+    "Clinical_Reasoning_Completeness": 0.3333,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_272",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 0.3333,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_276",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.8333
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_282",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 0.8
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_293",
+    "Clinical_Reasoning_Completeness": 0.5,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_291",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_3",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_41",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_46",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.4,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 0.6
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_44",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.1667
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_49",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_51",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.3333,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_50",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_52",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.3333
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_54",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_61",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_75",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_91",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_JesseLiu_medbulltes5op_94",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_144",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_123",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_169",
+    "Clinical_Reasoning_Completeness": 0.8,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_192",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_200",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_216",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": null
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_22",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.4,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.6667
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_237",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_251",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_256",
+    "Clinical_Reasoning_Completeness": 0.5,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 0.5,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_289",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_305",
+    "Clinical_Reasoning_Completeness": 0.4286,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 0.3333,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_28",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.0,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_31",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.5,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.3333
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_312",
+    "Clinical_Reasoning_Completeness": 0.8,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_333",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 0.8
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_356",
+    "Clinical_Reasoning_Completeness": 0.4286,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 0.3333,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_379",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_387",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_410",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_400",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.5,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.6667
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_440",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_450",
+    "Clinical_Reasoning_Completeness": 0.8,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_471",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_564",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_569",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_571",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_585",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_611",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_60",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_696",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.3333
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_653",
+    "Clinical_Reasoning_Completeness": 0.5,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 0.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_720",
+    "Clinical_Reasoning_Completeness": 0.5,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 0.3333,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TIGER-Lab_MMLU-Pro_814",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 0.6667
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_0",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_1057",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_1226",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.3333,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_117",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.25,
+    "Factual_Accuracy": 0.6667,
+    "Safety_Limitations_Epistemic": 0.6
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_1301",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_1304",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 0.5,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_1408",
+    "Clinical_Reasoning_Completeness": 0.1429,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 0.3333,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_1412",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_1610",
+    "Clinical_Reasoning_Completeness": 0.5,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_1494",
+    "Clinical_Reasoning_Completeness": 0.5,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_1560",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.3333,
+    "Safety_Limitations_Epistemic": 0.3333
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_1618",
+    "Clinical_Reasoning_Completeness": 0.5,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_1648",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.3333,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_177",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_1773",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 0.3333,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_1813",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_1862",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.1667,
+    "Factual_Accuracy": 0.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_1864",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 0.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_1896",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_1978",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_2003",
+    "Clinical_Reasoning_Completeness": 0.5,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_209",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_2118",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_2123",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 0.6667
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_2133",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_2154",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.4,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_2230",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.8
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_2303",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_2326",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_245",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_2368",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_359",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 0.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_439",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_385",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_396",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.3333,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_464",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_476",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_499",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_617",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_663",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 0.0,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_676",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_758",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_728",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_730",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_809",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 0.0,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_822",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_884",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.1667
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_87",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.1667,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_TsinghuaC3I_MedXpertQA_996",
+    "Clinical_Reasoning_Completeness": 0.4286,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.1667
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2016_1_B_113",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2016_1_E_16",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2016_1_F_113",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2016_1_F_119",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.3333
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2016_1_F_32",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.3333,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.6667
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2016_1_F_46",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2016_1_F_62",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2016_1_M_165",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": 0.8,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2016_1_Q_119",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.8,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 0.3333
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2016_1_M_52",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.6
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2016_1_Q_127",
+    "Clinical_Reasoning_Completeness": 0.8,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2016_1_Q_203",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2016_1_Q_179",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.6667
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2016_1_Q_207",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.3333
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2016_1_Q_233",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.3333
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2016_1_Q_48",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2016_1_Q_42",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8,
+    "Factual_Accuracy": 0.6667,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2017_1_B_19",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2017_1_B_47",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.8,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 0.6667
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2017_1_E_169",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2017_1_E_170",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2017_1_E_196",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.6,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2017_1_E_76",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2017_1_F_192",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2017_1_F_83",
+    "Clinical_Reasoning_Completeness": 0.8,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2017_1_M_149",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.25,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2017_1_P_44",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.6
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2017_1_P_62",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2017_1_Q_65",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_dvilares_head_qa_Cuaderno_2017_1_Q_67",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": 0.5,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.6667
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_11",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_12",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_13",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.3333,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_19",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_3",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_6",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_8",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 0.6
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_pmc-2731873-1",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_pmc-2924565-1",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_pmc-4400567-1",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_pmc-3905387-1",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_pmc-4440465-1",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_pmc-4528898-1",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.5,
+    "Factual_Accuracy": 0.3333,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_pmc-5997433-1",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_pmc-4684581-1",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.5,
+    "Factual_Accuracy": 0.6667,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_pmc-6598236-1",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_pmc-6462314-1",
+    "Clinical_Reasoning_Completeness": 0.8,
+    "Search_Citation_Faithfulness": 0.6,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_pmc-6959961-2",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_pmc-6605692-1",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.1667,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_pmc-7606204-1",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_pmc-7402425-1",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.3333,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_pmc-8605939-1",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_pmc-8202440-1",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_usmle-12464",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_ncbi_MedCalc-Bench_usmle-4327",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_06c8d324-ca85-489e-a010-da67157a3240",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.6667
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_0ba46472-54a7-4bb9-9802-a0546e24cede",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_104140eb-9ea9-4d91-8fa2-82aebb82e8ae",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_1579b75c-7804-45da-b317-eb16bac036be",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 0.6667
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_1e482c1e-4aee-48a7-9e4f-c480cc00a094",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_25a045ae-9cab-40c2-aaae-d890d4015eae",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.2,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.6667
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_2c4e0c71-ef7f-4f02-a2d3-a7a8860fe37e",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_25dc40da-7399-4011-b617-3b9c42d88277",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_398eda58-55e7-4a7f-be30-0d929eeba539",
+    "Clinical_Reasoning_Completeness": 0.8,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_335e8fc5-5039-4876-a07e-42364a9c8cfb",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.3333
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_49590250-c847-4276-9d56-c4b6a8cca048",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_45d2b684-c55a-400b-ab09-76ee3a9ba64b",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_4abe89b3-2fab-4615-8ba3-be109a8927fb",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.1667,
+    "Factual_Accuracy": 0.6667,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_55093e71-8916-4f25-9524-9425d51455e1",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_641f160f-eef0-4b8c-9cb8-3241d2d63173",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": 0.4,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_732401b0-673b-4842-baed-ddd00626c561",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_769b87a2-ecb8-4508-82d5-4fde94fa7f60",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.5,
+    "Factual_Accuracy": 0.6667,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_7a4da866-2f41-4510-aa28-0dabdf6d0d38",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.5,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.6667
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_7c6e7661-04a5-49db-b796-9e2091486f01",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.6667
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_7c8d5c20-9868-406d-a987-2d8027acffa1",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_92cf238d-78b7-4a6b-afd8-efa39e19084b",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": 0.6,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.6
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_8105a0cd-88aa-4c17-9535-7a864b445264",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.3333
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_94f81251-43c1-4ba0-a67c-4f6412742774",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_97194c13-bb56-4e06-ac35-79f69cb41bb3",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.8,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.3333
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_a67a3de5-fa39-4d47-b9f1-ca2a42aa8d70",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.3333
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_9aaf675f-b867-4cd9-ad9c-ee2dabb0a535",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 0.3333,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_abe0e99f-b2fe-4547-b2f7-58817eaea403",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_b478535e-7c19-45f4-9041-357628a77e73",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_cb562414-2015-43ec-88f7-78a52605b511",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_d12e4d46-e1d9-4320-860c-184a735d9027",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_d8f1b1c9-0dee-4d4b-9ab1-d0380a4e2502",
+    "Clinical_Reasoning_Completeness": 0.5,
+    "Search_Citation_Faithfulness": 0.3333,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_da85e1d0-fb34-41b9-85a8-b21192940c58",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.3333
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_dba5fe86-0faa-4037-bc20-e6b88972370d",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.6667
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_e76e4afb-db7c-4a0e-99bd-1be821e11adf",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_f2c94aa9-36ec-4b01-9a6c-11624e14ffed",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.8,
+    "Factual_Accuracy": 0.6667,
+    "Safety_Limitations_Epistemic": 0.25
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_f4e1dbce-eb9d-441c-9e1a-6f81ae207faf",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.3333,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.8
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_f578a648-c098-4b5b-af14-2cfb956c3779",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.3333,
+    "Safety_Limitations_Epistemic": 0.6
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_04e9f01f-a3f1-472b-be80-d1738aebbc55",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 0.6667
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_04e95512-8267-4e46-aa55-25a2da2ca0ae",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.5,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medmcqa_fd1abff0-73fe-49da-b311-3184d0c0e54d",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.5,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_0ba2864b-a332-47c6-99b5-76fe063e936a",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_0c776699-03e5-4d14-97de-aa3191a7cc2b",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.5,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.1667
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_0d827823-771f-4ccd-9420-f40b5db88bc4",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.1667
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_156ab651-0695-43c5-ae8e-f92c1b281c7e",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_16f7f4cb-3ecf-433c-9569-d13134b3fe6b",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.1667
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_268f1ca7-eb44-4169-9388-ad72f104e4ca",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.6667,
+    "Safety_Limitations_Epistemic": 0.3333
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_2630750b-aa80-4b0d-8d27-173b23082e15",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_286aab74-f5d5-4767-8dd3-7e5e99b87ed6",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_28e46118-fe25-4865-b9ab-06544d88d73c",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_39441fc2-c511-4a36-9488-5b02f159bc96",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_2c188fb9-0176-45ff-b542-fabd1be505ab",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.1667,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_36271121-fb32-42ac-a6c3-e3251e8a9d80",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_3a42e230-0cfd-43d0-903d-051452c90c0b",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.6667
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_3e07db19-a9fc-4c58-93c1-597afb3f9591",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.1667
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_3b817e2e-ce93-43b8-b781-34a554b1b336",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 0.8
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_43935b63-cd6a-4f3a-9c84-0484a2dfc663",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_4445c5da-9dd0-47bd-80da-0dce26da6b33",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.3333
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_4e712707-ae54-4ae3-890b-9d861cc682ce",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_5cd0dd51-ee42-4eda-9428-5b315fdbe3a8",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_50a43211-dc6e-4072-8ca0-9e08ac96c1bf",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.6
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_6585e012-d91a-4abd-9e53-476a1cc16b0d",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.75,
+    "Safety_Limitations_Epistemic": 0.8
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_6d42e037-66be-4501-a11a-c03562bb25ac",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_640c81dc-a749-4564-a0b1-3b2499514488",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_7206f556-83e4-44c1-8dff-aa5969b9d5e0",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.5,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.8333
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_81f17b21-dd75-4a0b-a314-f7b99cac166c",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.8,
+    "Factual_Accuracy": 0.6667,
+    "Safety_Limitations_Epistemic": 0.6667
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_7de0ce4e-e176-4308-9213-2697682b5254",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.1667
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_7e8d8ff2-a400-4000-a492-4a32e0a06317",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_90c89eda-3808-4aca-8ff2-c22ab8c84822",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_98ee6130-820a-4c05-b8e0-427a1214d8f0",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": null
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_aa3b481b-2fe3-464c-8c09-127382200244",
+    "Clinical_Reasoning_Completeness": 0.2857,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 0.3333,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_abaaca32-2af0-46fb-b178-93ea642f99ca",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_94da0e36-a045-48cb-87c5-0850c4893870",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.8,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_ac9820e5-b4ce-46f9-b2a3-5b5170e4824b",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_afc31a62-0542-4d95-adcc-3b4766e4b91b",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_b1e285a8-357a-440d-b4b8-dfacad6cb7b2",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_b393e0ea-effd-43c8-9e31-c2920ffac1b1",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.6667,
+    "Factual_Accuracy": 0.6,
+    "Safety_Limitations_Epistemic": 0.8
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_b4d5a5c7-f7c8-4db8-af8a-9db8926dbad9",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 0.6667,
+    "Safety_Limitations_Epistemic": 0.25
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_c70e704e-dec7-446d-bb55-322415074d27",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_c60d9668-d29c-4d43-b653-c71e044d53f0",
+    "Clinical_Reasoning_Completeness": 0.8333,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_cc70a7ab-a04e-41ef-9900-9252f567bd96",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": 0.4,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_ccdb402f-ba13-4117-be88-52288934e5b7",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_ce7d5e5e-6e88-4e5c-b9ad-da217d2c5deb",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.75,
+    "Safety_Limitations_Epistemic": 0.6
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_cf3dedd0-fa47-4ead-a67d-5038a7e9a500",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.0,
+    "Factual_Accuracy": 0.2,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_cf51e7ba-003e-40f6-b1d1-4f3a3baf707a",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_d6e6bd9b-de1b-48a1-9ab6-1d0ea0944307",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.2
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_d73403ab-7af1-4b28-a678-c14df5bf07c0",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_d99e31e2-d07e-4934-b551-508fd6a67e7c",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_d79346eb-c3cc-4f84-92cb-bc293337edb6",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_df51768e-e9f2-411c-97e5-5d6fa2167c44",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_e006336d-e2f4-4a21-986e-f28a785ef4d4",
+    "Clinical_Reasoning_Completeness": 0.6,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 0.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_e895d152-cc3b-4965-9a5a-d65d8b0a1bfb",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_e3e9c242-1435-4427-9cf8-7572fbd71e5a",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.5
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_e60e7a64-03b4-49d7-992f-f25c0fba4227",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 0.8333,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_ef5cb7e7-f7c8-4fcf-980c-b8cb6447b1d0",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_ef7349fd-3f4c-405d-b153-ac5541b0a131",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_ebba4660-1464-4b08-9e3d-ef546039686c",
+    "Clinical_Reasoning_Completeness": 0.8571,
+    "Search_Citation_Faithfulness": 1.0,
+    "Factual_Accuracy": 0.4,
+    "Safety_Limitations_Epistemic": 0.4
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_eb49cc5d-f856-4cc3-8ced-ed658c0180e7",
+    "Clinical_Reasoning_Completeness": 1.0,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_febdc104-5b24-4c90-9d45-b44872e3dadf",
+    "Clinical_Reasoning_Completeness": 0.6667,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 1.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_f54879c6-2199-4af0-b55e-2d9ceac446e6",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_f862234c-68dc-48ef-9a95-d83606986d10",
+    "Clinical_Reasoning_Completeness": 0.7143,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_f70c5d3f-74a7-44b6-826c-6c8942baf603",
+    "Clinical_Reasoning_Completeness": 0.5714,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  },
+  {
+    "trajectory": "trajectory_openlifescienceai_medqa_ff5b3225-cabd-4f91-8a8c-feffb59b5145",
+    "Clinical_Reasoning_Completeness": 0.8,
+    "Search_Citation_Faithfulness": null,
+    "Factual_Accuracy": 1.0,
+    "Safety_Limitations_Epistemic": 0.0
+  }
+]

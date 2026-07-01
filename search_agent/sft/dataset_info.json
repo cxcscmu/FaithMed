@@ -1,0 +1,10 @@
+{
+  "medmix_sft": {
+    "file_name": "sft_data.jsonl",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "response": "output"
+    }
+  }
+}

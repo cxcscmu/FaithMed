@@ -1,0 +1,980 @@
+rubrics:
+- id: A1
+  dimension: 1
+  name: Question clarity
+  description: 'Inspect the <think> block that precedes the first <search> tag (Turn
+    1 thinking). Does the model contain an explicit sentence restating or paraphrasing
+    the core clinical question — identifying the condition, mechanism, or scenario
+    at issue — before the first <search>? MET: <think> contains a sentence such as
+    "The question asks whether X causes Y" or "I need to determine the mechanism of
+    Z". UNMET: <think> block moves directly from listing answer options (A, B, C…)
+    to issuing <search> without articulating what the model is trying to find; or
+    no <think> block appears before the first <search>.
+
+    '
+  type: binary
+  precondition: null
+  scale_labels:
+  - UNMET
+  - MET
+  active: true
+- id: A2
+  dimension: 1
+  name: Question framing alignment
+  description: 'Inspect the Turn 1 <think> block. Does the model correctly identify
+    the decision type required by the question stem (e.g., most likely diagnosis,
+    best next step, underlying mechanism, risk factor, management strategy, or prognosis)
+    before issuing any <search>? Score 0 if the decision type is misidentified — e.g.,
+    the <think> block frames a management question ("what drug to give") as a mechanism
+    question ("how does the drug work") and the first <search> targets the wrong domain
+    entirely. Score 1 if the decision type is approximately correct but insufficiently
+    specific — e.g., identifies "treatment" for a question specifically asking about
+    "first-line treatment in penicillin-allergic patients", with a <search> that ignores
+    the allergy context. Score 2 if the <think> block names the precise decision type
+    and all subsequent reasoning and <search> queries operate within that frame.
+
+    '
+  type: ordinal3
+  precondition: null
+  scale_labels:
+  - '0: Off-target framing'
+  - '1: Partially aligned'
+  - '2: Precisely aligned'
+  active: false
+  pruning_history:
+  - action: remove
+    reason: 'variance=0.0000 < 0.04 (std=0.000): no RL gradient signal'
+    timestamp: '2026-04-02T13:57:53.310507'
+- id: A3
+  dimension: 1
+  name: Patient-information integration
+  description: 'Inspect the Turn 1 <think> block. Before the first <search>, does
+    the model explicitly reference specific patient features from the question stem
+    (e.g., age, comorbidities, current medications, symptom onset, severity, contraindications,
+    prior treatment, care setting) and connect them to the clinical question being
+    asked? Score 0 if no patient-specific features are mentioned in <think> before
+    the first <search> — e.g., <think> opens with "The mechanism of X is…" ignoring
+    that the patient is 8 weeks pregnant with a specific contraindication. Score 1
+    if some features are named in <think> but not connected to why they matter for
+    this question — e.g., <think> lists "patient on warfarin" but the <search> query
+    does not reflect anticoagulation. Score 2 if key patient features are explicitly
+    linked to the question frame before the first <search> — e.g., "The patient is
+    on warfarin, so I need evidence about TXA specifically in anticoagulated patients".
+
+    '
+  type: ordinal3
+  precondition: null
+  scale_labels:
+  - '0: Ignores patient info'
+  - '1: Partial integration'
+  - '2: Strong patient-specific framing'
+  active: false
+  pruning_history:
+  - action: remove
+    reason: 'variance=0.0047 < 0.04 (std=0.068): no RL gradient signal'
+    timestamp: '2026-04-02T13:57:53.310725'
+- id: A4
+  dimension: 1
+  name: Salient patient-feature extraction
+  description: 'Inspect the Turn 1 <think> block before the first <search>. Does the
+    model identify the single most diagnostically or clinically pivotal patient feature
+    — the one feature whose presence or absence most constrains the answer — and name
+    it explicitly? MET: <think> names the pivotal feature and explains why it is decisive
+    (e.g., "The key finding here is pulsus paradoxus, which distinguishes tamponade
+    from other causes of JVD"). UNMET: <think> mentions several features without singling
+    out the decisive one, or a pivotal feature present in the question stem is completely
+    absent from the <think> block, leading to a <search> that does not reflect the
+    most constraining clinical information.
+
+    '
+  type: binary
+  precondition: null
+  scale_labels:
+  - UNMET
+  - MET
+  active: true
+- id: A5
+  dimension: 1
+  name: Question answerability
+  description: 'Inspect the Turn 1 <think> block. Is the clinical problem narrowed
+    to a specific, answerable question before the first <search> tag, rather than
+    left as a vague topic area? Score 0 if <think> ends with a broad topic (e.g.,
+    "I should look up pericardial disease") with no specific question, producing a
+    <search> that is likewise broad. Score 1 if a question is stated but incompletely
+    specific — e.g., "I need to know about cardiac tamponade echo findings" rather
+    than "Does diastolic RV collapse distinguish tamponade from constrictive pericarditis
+    on echo?" Score 2 if <think> contains a precise, answerable question before <search>
+    that directly maps to the decision required — e.g., "I need to confirm whether
+    diastolic RV collapse is specific to tamponade vs. constrictive pericarditis".
+
+    '
+  type: ordinal3
+  precondition: null
+  scale_labels:
+  - '0: Vague / non-actionable'
+  - '1: Partially answerable'
+  - '2: Clearly answerable'
+  active: true
+- id: A6
+  dimension: 1
+  name: Information-gap identification
+  description: 'Inspect the Turn 1 <think> block. When the model decides to issue
+    a <search>, does it first name a specific piece of information or unresolved uncertainty
+    that cannot be resolved from the question stem alone, thereby justifying the search?
+    MET: <think> contains an explicit gap statement immediately before <search> —
+    e.g., "I am not certain whether SGLT1 co-transports glucose and sodium simultaneously
+    — let me search" or "The question involves an ECG finding I cannot interpret from
+    text alone". UNMET: The model searches without naming a gap ("let me search for
+    cardiac tamponade"), OR the model decides not to search despite genuine uncertainty
+    that would affect the answer, answering purely from parametric knowledge without
+    acknowledging the gap.
+
+    '
+  type: binary
+  precondition: null
+  scale_labels:
+  - UNMET
+  - MET
+  active: false
+  pruning_history:
+  - action: merged_into
+    merged_into: A_d1
+    reason: Pearson r=0.784 (n=186) ≥ threshold 0.75
+    timestamp: '2026-04-02T13:57:53.310292'
+- id: B1
+  dimension: 2
+  name: Reasoning-grounded search initiation
+  description: 'Inspect the <think> block immediately preceding each <search> tag.
+    Is the search explicitly motivated by a reasoning step — an unresolved claim,
+    a stated uncertainty, or a named knowledge gap — in that same <think> block? Score
+    0 if a <search> tag appears with no preceding <think> reasoning at all, or if
+    <think> contains only answer-option listing with no articulated motivation. Score
+    1 if <think> mentions a relevant topic before <search> but does not articulate
+    why search is necessary — e.g., "Echo findings in tamponade include RV collapse.
+    <search> cardiac tamponade echo</search>" (states a known fact, then searches
+    it without explaining the gap). Score 2 if <think> explicitly states an unresolved
+    claim or missing datum immediately before <search> — e.g., "I cannot confirm from
+    memory whether septal bounce is pathognomonic for constrictive pericarditis —
+    <search>septal bounce constrictive pericarditis specificity</search>".
+
+    '
+  type: ordinal3
+  precondition: search_performed
+  scale_labels:
+  - '0: No clear motivation'
+  - '1: Weak or implicit motivation'
+  - '2: Explicitly motivated by gap'
+  active: false
+  pruning_history:
+  - action: merged_into
+    merged_into: B_d1
+    reason: Pearson r=1.000 (n=189) ≥ threshold 0.75
+    timestamp: '2026-04-02T13:57:53.309681'
+- id: B2
+  dimension: 2
+  name: Search necessity alignment
+  description: 'Inspect the <think> block for each <search> tag. Does the model demonstrate
+    that this search is epistemically necessary — i.e., the question cannot be answered
+    confidently without it — rather than issuing <search> as a reflexive default step?
+    MET: <think> establishes either (a) a genuine uncertainty about a clinically important
+    fact, or (b) a need to confirm a claim before relying on it for the answer, and
+    only then issues <search>. UNMET: <think> appears to already know the answer (e.g.,
+    states a correct clinical fact with confidence) and then issues <search> for that
+    same fact without explaining why verification is needed; OR multiple <search>
+    tags address the same resolved question without new uncertainty being introduced
+    between them.
+
+    '
+  type: binary
+  precondition: search_performed
+  scale_labels:
+  - UNMET
+  - MET
+  active: false
+  pruning_history:
+  - action: merged_into
+    merged_into: B_d1
+    reason: Pearson r=1.000 (n=189) ≥ threshold 0.75
+    timestamp: '2026-04-02T13:57:53.309696'
+- id: B3
+  dimension: 2
+  name: Query-target alignment
+  description: 'Inspect each <search> tag text alongside the immediately preceding
+    <think> block. Does the query text directly target the specific clinical concept
+    or uncertainty articulated in that <think> block? Score 0 if the query terms differ
+    substantially from the stated gap — e.g., <think> asks about "drug mechanism"
+    but <search> contains "epidemiology incidence"; OR the query conflates multiple
+    unrelated clinical concepts (e.g., <search>glucose sodium fructose absorption
+    transporter rate</search> for a single-concept gap about SGLT1). Score 1 if the
+    query partially addresses the gap but is under-specified (e.g., <search>pericarditis</search>
+    when the gap is specifically about echocardiographic differentiation from tamponade).
+    Score 2 if the query text maps precisely to the stated knowledge gap using the
+    most relevant clinical terminology — e.g., <search>diastolic RV collapse echocardiographic
+    cardiac tamponade specificity</search>.
+
+    '
+  type: ordinal3
+  precondition: search_performed
+  scale_labels:
+  - '0: Off-target or over-broad'
+  - '1: Partially aligned'
+  - '2: Precisely aligned'
+  active: false
+  pruning_history:
+  - action: merged_into
+    merged_into: A_d1
+    reason: Pearson r=0.784 (n=186) ≥ threshold 0.75
+    timestamp: '2026-04-02T13:57:53.310294'
+- id: B4
+  dimension: 2
+  name: History-aware query refinement
+  description: 'This criterion applies only when a <think> block in turn T explicitly
+    acknowledges that the preceding turn''s retrieved [Tn-Rn] passages were insufficient
+    or off-topic (e.g., "the search did not return data on HCl reactivity", "none
+    of the results addressed dosing in renal failure"). MET: Following that acknowledgment,
+    the model issues a new <search> in the same or next turn with modified, more specific,
+    or reframed terms that address the identified gap. UNMET: After explicitly acknowledging
+    retrieval failure in <think>, the model proceeds directly to <answer> without
+    issuing a corrective <search>; OR issues an identical <search> query without modification.
+
+    '
+  type: binary
+  precondition: search_performed
+  scale_labels:
+  - UNMET
+  - MET
+  active: false
+  pruning_history:
+  - action: remove
+    reason: 'variance=0.0208 AND NA=84.3%: zero signal + rarely applicable'
+    timestamp: '2026-04-02T13:57:53.311383'
+- id: B5
+  dimension: 2
+  name: Gap-directed search progression
+  description: 'Inspect all <search> tags across the full trajectory. Do successive
+    queries collectively make progress toward resolving the outstanding evidence need,
+    rather than repeating resolved topics or drifting to unrelated areas? MET: Each
+    new <search> tag addresses a different clinical sub-question not already resolved
+    by prior [Tn-Rn] results — e.g., T1 searches tamponade echo findings (mechanism),
+    T2 searches pulsus paradoxus criteria (diagnostic threshold). UNMET: Two or more
+    <search> tags contain semantically equivalent queries (e.g., "cardiac tamponade
+    echo" followed by "tamponade echocardiogram findings"), indicating stalled progress;
+    OR later searches address topics tangential to the original clinical question
+    without a stated reason.
+
+    '
+  type: binary
+  precondition: search_performed
+  scale_labels:
+  - UNMET
+  - MET
+  active: true
+- id: B6
+  dimension: 2
+  name: Retrieval yield relevance
+  description: 'Inspect the [Tn-Rn] passages returned after each <search> tag. Are
+    the retrieved passages predominantly relevant to the specific clinical concept
+    named in that <search> query? MET: The majority (≥4 of 6, or equivalent) of [Tn-Rn]
+    passages returned for a given turn contain specific, usable information about
+    the queried concept. UNMET: The majority of [Tn-Rn] passages for a turn are about
+    unrelated or only tangentially related topics despite the <search> query being
+    well-formed — e.g., a search for "SGLT1 glucose sodium cotransport" returns passages
+    exclusively about renal SGLT2 inhibitors. Note: score UNMET only when the query
+    was appropriately targeted; if the query itself was off-target (scored in B3),
+    attribute failure to B3, not B6.
+
+    '
+  type: binary
+  precondition: search_performed
+  scale_labels:
+  - UNMET
+  - MET
+  active: true
+- id: C1
+  dimension: 3
+  name: Evidence-faithful synthesis
+  description: 'Inspect every <think> block that follows a search turn and the <answer>
+    block. Do the clinical claims attributed to specific [Tn-Rn] passages accurately
+    reflect the content of those passages, without adding facts not present in the
+    cited text (e.g., fabricating dosages, extending mechanism claims beyond what
+    the passage states, attributing trial outcomes not mentioned)? MET: Every claim
+    in <think> or <answer> that cites a [Tn-Rn] can be verified by reading that passage;
+    no facts are introduced that the passage does not contain. UNMET: <think> or <answer>
+    attributes a specific fact (e.g., "T1-R3 confirms that pulsus paradoxus >10 mmHg
+    is diagnostic") when the cited passage does not state that threshold; OR a mechanistic
+    claim is attributed to a passage that only discusses epidemiology.
+
+    '
+  type: binary
+  precondition: answer
+  scale_labels:
+  - UNMET
+  - MET
+  active: true
+- id: C2
+  dimension: 3
+  name: Evidence conflict recognition
+  description: 'Inspect all <think> blocks. When two or more [Tn-Rn] passages from
+    any turn provide inconsistent or contradictory information about the same clinical
+    question (e.g., different efficacy rates, contradictory drug mechanisms, inconsistent
+    diagnostic criteria), does the <think> block explicitly identify and characterise
+    the discrepancy? MET: <think> contains an explicit statement such as "T1-R2 reports
+    65% success with oxymetazoline while T1-R5 shows TXA superior — there is conflicting
+    evidence". UNMET: The model silently selects one [Tn-Rn] passage and draws a conclusion
+    without acknowledging that another retrieved passage contradicts or qualifies
+    it; the conflict is invisible in the reasoning.
+
+    '
+  type: binary
+  precondition: search_performed
+  scale_labels:
+  - UNMET
+  - MET
+  active: true
+- id: C3
+  dimension: 3
+  name: Evidence hierarchy awareness
+  description: 'Inspect all <think> blocks. When the model gives greater weight to
+    one [Tn-Rn] passage than another, does it explicitly justify that preference
+    using an evidence-hierarchy rationale, such as study design, guideline authority,
+    sample size, recency, or source reliability? MET: <think> explicitly names a study-design reason —
+    e.g., "T2-R1 is an RCT whereas T1-R3 is a case report, so I weight T2-R1 more
+    heavily"; or "T1-R3 is a CDC guideline, which takes precedence over the narrative
+    review in T1-R5". UNMET: <think> favours one source using language like "the most
+    relevant result" or "the best evidence indicates" without naming any methodological
+    basis; OR all [Tn-Rn] passages are treated as equally authoritative regardless
+    of source type (PubMed primary study vs. WikiDoc guideline vs. case report).
+
+    '
+  type: binary
+  precondition: search_performed
+  scale_labels:
+  - UNMET
+  - MET
+  active: true
+- id: C4
+  dimension: 3
+  name: Evidence sufficiency judgment
+  description: 'Inspect the <think> block following each search turn. When the retrieved
+    [Tn-Rn] passages do not directly address the clinical concept targeted by the
+    preceding <search> (e.g., a search for drug–drug interaction returns only pharmacokinetic
+    background), does <think> explicitly state this insufficiency before proceeding
+    to draw conclusions? MET: <think> contains a sentence such as "the retrieved passages
+    do not directly confirm polonium''s reactivity with HCl" or "no passage specifically
+    addressed dosing in renal failure" before reasoning forward from indirect evidence.
+    UNMET: After a <search> that returned off-topic [Tn-Rn] passages, <think> proceeds
+    to state a conclusion as though the evidence was retrieved — e.g., cites [T3-R1]
+    for a drug mechanism claim when that passage discusses only welfare state policy.
+
+    '
+  type: binary
+  precondition: search_performed
+  scale_labels:
+  - UNMET
+  - MET
+  active: true
+- id: C5
+  dimension: 3
+  name: Internal validity / trustworthiness appraisal
+  description: 'Inspect all <think> blocks. For at least one clinically important
+    claim supported by a [Tn-Rn] citation, does the <think> block note a signal about
+    the methodological strength or trustworthiness of that source (e.g., mentions
+    "RCT", "prospective cohort", "CDC guideline", "case report", "small sample size",
+    "animal study")? MET: At least one methodological qualifier appears in <think>
+    alongside a citation for a clinically important claim — e.g., "[T1-R6] is an RCT
+    in antiplatelet users, which provides stronger evidence than the case series in
+    [T1-R1]". UNMET: All [Tn-Rn] citations in <think> are used without any qualifier
+    about study design or quality; every citation is treated as authoritative regardless
+    of source type.
+
+    '
+  type: binary
+  precondition: search_performed
+  scale_labels:
+  - UNMET
+  - MET
+  active: false
+  pruning_history:
+  - action: remove
+    reason: 'variance=0.0239 < 0.04 (std=0.155): no RL gradient signal'
+    timestamp: '2026-04-02T13:57:53.310946'
+- id: C6
+  dimension: 3
+  name: Evidence limitation recognition
+  description: 'Inspect all <think> blocks. Does the model identify at least one important
+    limitation of the retrieved [Tn-Rn] evidence relative to the current clinical
+    question — e.g., the study population differs from the patient, the outcome measured
+    differs from what is asked, the dose reported differs from standard care, or the
+    evidence is indirect (animal or in vitro)? MET: <think> explicitly names a limitation
+    — e.g., "T1-R6 was conducted in antiplatelet users, not warfarin patients; the
+    antifibrinolytic effect should be similar but direct evidence is lacking". UNMET:
+    <think> applies retrieved [Tn-Rn] evidence to the clinical scenario without noting
+    any limitation when differences between the study context and the question''s
+    scenario are evident from reading the passages.
+
+    '
+  type: binary
+  precondition: search_performed
+  scale_labels:
+  - UNMET
+  - MET
+  active: false
+- id: C7
+  dimension: 3
+  name: Setting applicability
+  description: 'Inspect all <think> blocks and the <answer> block. Does the model
+    explicitly assess whether at least one key [Tn-Rn] passage applies to the specific
+    patient or scenario described in the question stem, by comparing the passage''s
+    population or context to the patient''s features? MET: <think> or <answer> contains
+    an explicit applicability statement — e.g., "T2-R1 reports echocardiographic findings
+    in ICU patients with effusion, which matches the ED presentation in this case";
+    or "T1-R3 is about neonates born to infected mothers, directly applicable here".
+    UNMET: <think> and <answer> apply [Tn-Rn] evidence to the case without any comparison
+    between the passage population/context and the patient''s specific clinical features.
+
+    '
+  type: binary
+  precondition: answer
+  scale_labels:
+  - UNMET
+  - MET
+  active: true
+- id: C8
+  dimension: 3
+  name: Applicability limits disclosure
+  description: 'Inspect all <think> blocks and the <answer> block. When a [Tn-Rn]
+    passage is valid but only partially applicable (e.g., evidence from antiplatelet
+    users applied to a warfarin patient, or adult dosing data applied to a paediatric
+    case), does the model explicitly note this partial applicability before relying
+    on the evidence? MET: <think> contains a qualifier such as "this RCT was in patients
+    on antiplatelet therapy, not warfarin — the antifibrinolytic mechanism is similar
+    but I am extrapolating" before citing [T1-R6] to support a recommendation. UNMET:
+    <think> or <answer> extrapolates [Tn-Rn] findings from a different patient population,
+    drug class, or clinical setting to the current scenario without acknowledging
+    the gap.
+
+    '
+  type: binary
+  precondition: answer
+  scale_labels:
+  - UNMET
+  - MET
+  active: false
+- id: C9
+  dimension: 3
+  name: Information-role recognition
+  description: 'Inspect all <think> blocks. Before relying on a [Tn-Rn] passage to
+    support a clinical claim, does the model correctly identify the epistemic role
+    of that passage — distinguishing background pathophysiology, case report, diagnostic
+    criteria, treatment guideline, or safety data — and weight it accordingly? MET:
+    <think> classifies at least one passage by type before citing it — e.g., "T1-R6
+    is a WikiDoc guideline summary providing background on constrictive pericarditis
+    echo findings, not a primary RCT; I use it for orientation only". UNMET: <think>
+    treats a narrative review abstract, a WikiDoc guideline entry, or a case series
+    as equivalent to an RCT or society guideline without distinguishing evidence type;
+    or background-only passages are cited as if they provide recommendation-level
+    guidance.
+
+    '
+  type: binary
+  precondition: search_performed
+  scale_labels:
+  - UNMET
+  - MET
+  active: false
+- id: D1
+  dimension: 4
+  name: Claim substantiation breadth
+  description: 'Inspect both the <think> blocks and the <answer> block. Across all
+    sections combined, what proportion of affirmative clinical claims (e.g., "option
+    A is ruled out because X", "drug Z acts via mechanism W", "this finding indicates
+    Y") are accompanied by at least one inline [Tn-Rn] citation when a search has
+    been performed? Score 0 if fewer than half of substantive clinical claims carry
+    [Tn-Rn] citations — e.g., <answer> block asserts "pulsus paradoxus is pathognomonic
+    for tamponade" and "septal bounce is specific to constrictive pericarditis" with
+    no citations despite search having returned relevant [T1-Rn] passages on these
+    exact points. Score 1 if 50–90% of claims carry citations but one or more key
+    claims in the <answer> block are asserted without any [Tn-Rn] support — e.g.,
+    the final \boxed{} justification in <answer> lacks citation despite the <think>
+    block having cited evidence. Score 2 if >90% of affirmative clinical claims in
+    both <think> and <answer> sections carry inline [Tn-Rn] citations.
+
+    '
+  type: ordinal3
+  precondition: answer
+  scale_labels:
+  - '0: Few (<50%) claims cited'
+  - '1: Most (50-90%) cited'
+  - '2: All or nearly all (>90%) cited'
+  active: false
+  pruning_history:
+  - action: merged_into
+    merged_into: D_d2
+    reason: Pearson r=0.885 (n=190) ≥ threshold 0.75
+    timestamp: '2026-04-02T13:57:53.310085'
+- id: D2
+  dimension: 4
+  name: Citation-to-claim faithfulness
+  description: 'Inspect every [Tn-Rn] citation in both <think> and <answer>. Does
+    the cited passage''s content directly support the specific clinical claim it is
+    attached to? Score 0 if one or more citations in <think> or <answer> are attached
+    to claims the passage does not support — e.g., <answer> cites [T1-R3] (a pathophysiology
+    review) for the specific claim that "pulsus paradoxus >10 mmHg is diagnostic",
+    when [T1-R3] discusses only general pericardial disease management without stating
+    that threshold. Score 1 if most citations are congruent but one or two are only
+    loosely related — e.g., a passage about constrictive pericarditis aetiology is
+    cited to support a claim about treatment efficacy. Score 2 if every [Tn-Rn] citation
+    in both <think> and <answer> directly and specifically supports its attached claim.
+
+    '
+  type: ordinal3
+  precondition: answer
+  scale_labels:
+  - '0: Citations do not support claim'
+  - '1: Partial or imperfect support'
+  - '2: Every citation clearly supports its claim'
+  active: false
+  pruning_history:
+  - action: merged_into
+    merged_into: D_d2
+    reason: Pearson r=0.885 (n=190) ≥ threshold 0.75
+    timestamp: '2026-04-02T13:57:53.310087'
+- id: D3
+  dimension: 4
+  name: Evidence-based exclusion of alternatives
+  description: 'Inspect the <think> blocks. When the model eliminates one or more
+    incorrect answer options, does it use at least one [Tn-Rn] citation to support
+    each elimination, rather than dismissing options purely by parametric assertion?
+    MET: At least one option elimination in <think> is grounded in a [Tn-Rn] citation
+    — e.g., "[T1-R2] confirms pericardial thickening is the hallmark of constrictive
+    pericarditis, ruling out option B in this patient whose echo shows no thickening".
+    UNMET: All option eliminations in <think> are bare assertions — e.g., "option
+    C (myocardial infarction) is wrong because the patient has normal contractility"
+    — with no [Tn-Rn] citation despite relevant passages having been retrieved in
+    the trajectory.
+
+    '
+  type: binary
+  precondition: answer
+  scale_labels:
+  - UNMET
+  - MET
+  active: true
+- id: D4
+  dimension: 4
+  name: Purpose-appropriate retrieved evidence use
+  description: 'Inspect all [Tn-Rn] citations in <think> and <answer>. Is each citation
+    used for an appropriate epistemic purpose — supporting an important clinical claim,
+    verifying safety or guideline-level recommendation, confirming uncertain medical
+    knowledge, or resolving a differential — rather than decoratively? MET: Every
+    citation anchors a specific claim that would be unsupported if the citation were
+    removed; no citation is appended to a sentence that is self-evident or already
+    established by other in-text reasoning. UNMET: One or more citations in <think>
+    or <answer> are used purely for rhetorical support — e.g., "[T1-R1]" is appended
+    to a well-known textbook fact ("the pericardium surrounds the heart [T1-R1]")
+    that requires no evidence citation, while clinically important claims nearby are
+    left uncited.
+
+    '
+  type: binary
+  precondition: answer
+  scale_labels:
+  - UNMET
+  - MET
+  active: false
+  pruning_history:
+  - action: merged_into
+    merged_into: D_d1
+    reason: Pearson r=0.946 (n=193) ≥ threshold 0.75
+    timestamp: '2026-04-02T13:57:53.309888'
+- id: D5
+  dimension: 4
+  name: Retrieved evidence priority
+  description: 'Inspect <think> blocks where a [Tn-Rn] passage exists that directly
+    addresses the clinical concept under discussion. When such a passage is available,
+    does the model base its inference on that passage rather than overriding it with
+    a parametric assertion? MET: Where a [Tn-Rn] passage directly addresses a claim,
+    <think> references and follows that passage rather than substituting "I recall
+    that…" or "It is known that…" for the retrieved content. UNMET: <think> states
+    a clinical claim using parametric knowledge (e.g., "As I know from training, tamponade
+    causes diastolic RV collapse") for a concept that a retrieved [Tn-Rn] passage
+    explicitly addresses — effectively ignoring the retrieved evidence in favour of
+    memory. UNMET also if <think> explicitly disagrees with a retrieved passage without
+    citing a stronger source.
+
+    '
+  type: binary
+  precondition: search_performed
+  scale_labels:
+  - UNMET
+  - MET
+  active: false
+  pruning_history:
+  - action: merged_into
+    merged_into: D_d1
+    reason: Pearson r=0.946 (n=193) ≥ threshold 0.75
+    timestamp: '2026-04-02T13:57:53.309891'
+- id: D6
+  dimension: 4
+  name: Non-retrieval claim discipline
+  description: 'Inspect all clinical claims in <think> and <answer> that carry no
+    [Tn-Rn] citation. Are all uncited claims restricted to high-confidence, well-established
+    medical knowledge (e.g., basic physiology, textbook pharmacology), rather than
+    uncertain or high-stakes assertions? MET: Every uncited claim in <think> and <answer>
+    is a widely accepted medical fact that any medical professional would regard as
+    non-controversial — e.g., "warfarin inhibits vitamin K-dependent clotting factors"
+    requires no citation. UNMET: <think> or <answer> makes an uncited assertion about
+    comparative drug efficacy, guideline-level recommendations, specific dosing thresholds,
+    or prognostic estimates that would be considered contestable or uncertain — e.g.,
+    "oral TXA is equally effective as IV TXA for epistaxis in anticoagulated patients"
+    stated without a [Tn-Rn] citation.
+
+    '
+  type: binary
+  precondition: answer
+  scale_labels:
+  - UNMET
+  - MET
+  active: true
+- id: E1
+  dimension: 5
+  name: Retrieved source verifiability
+  description: 'Inspect every [Tn-Rn] reference appearing in <think> and <answer>.
+    Does each citation index correspond to a passage that actually appeared in the
+    retrieved results for that turn number? MET: Every citation in <think> and <answer>
+    matches a real [Tn-Rn] entry in the trajectory — e.g., if Turn 1 retrieved results
+    T1-R1 through T1-R6, then no citation in the trajectory references [T1-R7] or
+    [T2-Rn] when only one search turn occurred. UNMET: <think> or <answer> contains
+    a citation index (e.g., [T1-R8], [T3-R2]) for which no corresponding retrieved
+    passage exists in the trajectory — a hallucinated citation. UNMET also if the
+    model cites [T2-Rn] passages in a single-turn trajectory where only one search
+    was performed.
+
+    '
+  type: binary
+  precondition: answer
+  scale_labels:
+  - UNMET
+  - MET
+  active: false
+- id: E2
+  dimension: 5
+  name: Uncertainty calibration
+  description: 'Inspect the <think> blocks and <answer> block. Does the model 
+    explicitly acknowledge limitations in the retrieved information or express
+    appropriate uncertainty before drawing a conclusion? MET: At least one
+    explicit hedge appears in <think> or <answer> whenever the evidentiary basis is
+    weak — e.g., "the retrieved passages do not confirm X; based on clinical reasoning
+    I tentatively conclude Y", or "limited data support this — evidence suggests…"
+    in <answer> when the trajectory contained only peripheral [Tn-Rn] passages. UNMET:
+    <think> or <answer> states a clinical conclusion with high certainty (e.g., "the
+    mechanism is definitively X", "this is clearly Y") when the retrieved [Tn-Rn]
+    passages are off-topic, sparse, or absent — as occurred in the 4-turn trajectory
+    where the model stated "the answer is likely D (Florida)" with no direct state-level
+    data retrieved.
+
+    '
+  type: binary
+  precondition: answer
+  scale_labels:
+  - UNMET
+  - MET
+  active: true
+- id: E3
+  dimension: 5
+  name: Overclaim avoidance
+  description: 'Inspect all <think> blocks and the <answer> block. Does the model
+    avoid presenting weak or indirect [Tn-Rn] passages (case reports, narrative review
+    abstracts, WikiDoc entries, non-peer-reviewed summaries) as definitive clinical
+    evidence? MET: When a cited [Tn-Rn] passage comes from a weak source (e.g., "Data
+    Source: WikiDoc guideline"), <think> or <answer> qualifies its evidentiary weight
+    — e.g., "T1-R6 is a WikiDoc guideline summary; I use it for orientation, not as
+    primary evidence". UNMET: <think> or <answer> cites a WikiDoc entry, single case
+    report, or abstract as if it were an RCT or society clinical practice guideline,
+    attributing diagnostic or therapeutic conclusions to it without qualification.
+
+    '
+  type: binary
+  precondition: answer
+  scale_labels:
+  - UNMET
+  - MET
+  active: false
+- id: E4
+  dimension: 5
+  name: Premature closure avoidance
+  description: 'Inspect the final <think> block immediately before <answer>. Does
+    the model avoid committing definitively to a diagnosis or management decision
+    when the retrieved [Tn-Rn] evidence leaves multiple answer options plausible?
+    MET: Final <think> block either (a) explains why each competing answer option
+    can be excluded based on [Tn-Rn] evidence, or (b) acknowledges residual uncertainty
+    before selecting \boxed{X}. UNMET: Final <think> block states the answer with
+    full certainty (e.g., "therefore the answer is A") without addressing competing
+    options or residual ambiguity, despite [Tn-Rn] passages not unambiguously distinguishing
+    between two or more plausible options — e.g., selecting tamponade over constrictive
+    pericarditis when both share the retrieved echocardiographic features cited.
+
+    '
+  type: binary
+  precondition: answer
+  scale_labels:
+  - UNMET
+  - MET
+  active: true
+- id: E5
+  dimension: 5
+  name: Preference-sensitive decision integration
+  description: 'Inspect the <answer> block. When the clinical scenario involves a
+    management decision where patient values, goals, tolerability, or preferences
+    are clinically relevant (e.g., choice between anticoagulation agents, surgical
+    vs. medical management, end-of-life interventions), does <answer> acknowledge
+    that the preferred choice may depend on patient-specific factors beyond clinical
+    evidence alone? MET: <answer> contains a statement such as "the choice between
+    X and Y should also reflect the patient''s preferences regarding monitoring burden
+    / tolerability / goals of care". UNMET: <answer> presents a single management
+    option as universally correct for a scenario that involves a tradeoff where patient
+    preferences are clinically material — e.g., recommending anticoagulation in a
+    patient with bleeding risk without noting the preference-sensitive nature of the
+    risk-benefit decision.
+
+    '
+  type: binary
+  precondition: answer
+  scale_labels:
+  - UNMET
+  - MET
+  active: false
+  pruning_history:
+  - action: remove
+    reason: 'variance=0.0307 < 0.04 (std=0.175): no RL gradient signal'
+    timestamp: '2026-04-02T13:57:53.311165'
+- id: E6
+  dimension: 5
+  name: Tradeoff communication
+  description: 'Inspect the <answer> block. Does <answer> explicitly
+    name at least one relevant tradeoff (benefit–harm, efficacy–tolerability, 
+    convenience–monitoring burden), ideally anchored in a [Tn-Rn] citation? MET:
+    <answer> discusses at least one tradeoff relevant to the recommendation — e.g.,
+    "[T1-R6] shows TXA is more effective than packing in antiplatelet users, but IV
+    administration adds procedural burden compared to topical oxymetazoline". UNMET:
+    <answer> presents a recommendation (e.g., "give IV TXA") in a scenario that clearly
+    involves competing considerations without mentioning any tradeoff — e.g., recommending
+    warfarin continuation in an actively bleeding patient without noting haemorrhagic
+    risk.
+
+    '
+  type: binary
+  precondition: answer
+  scale_labels:
+  - UNMET
+  - MET
+  active: true
+- id: B_d1
+  dimension: 2
+  name: Search Motivation and Necessity
+  description: 'Inspect the <think> block immediately preceding each <search> tag.
+    Is the search explicitly motivated by a reasoning step — an unresolved claim,
+    a stated uncertainty, or a named knowledge gap — and is it epistemically necessary?
+    Score 0 if a <search> tag appears with no preceding <think> reasoning at all,
+    or if <think> contains only answer-option listing with no articulated motivation.
+    Score 0 if <think> appears to already know the answer (e.g., states a correct
+    clinical fact with confidence) and then issues <search> for that same fact without
+    explaining why verification is needed; OR multiple <search> tags address the same
+    resolved question without new uncertainty being introduced between them. Score
+    1 if <think> explicitly states an unresolved claim or missing datum immediately
+    before <search>, demonstrating a genuine uncertainty about a clinically important
+    fact or a need to confirm a claim before relying on it for the answer.
+
+    '
+  type: binary
+  precondition: search_performed
+  scale_labels:
+  - Motivation and Necessity UNMET
+  - Motivation and Necessity MET
+  active: false
+  auto_drafted: true
+  notes: Auto-merged from [B1] + [B2]. Pearson r=1.000 (n=189) ≥ threshold 0.75
+  pruning_history:
+  - action: merged_into
+    merged_into: B_d2
+    reason: Pearson r=0.896 (n=188) ≥ threshold 0.75
+    timestamp: '2026-04-02T14:04:31.505756'
+- id: D_d1
+  dimension: 4
+  name: Retrieved evidence use and priority
+  description: 'Inspect all [Tn-Rn] citations in <think> and <answer> blocks, and
+    the model''s overall reasoning when search has been performed. Does the model
+    use retrieved evidence for appropriate epistemic purposes, rather than decoratively,
+    and prioritize it over parametric knowledge when directly relevant? MET: Every
+    citation anchors a specific claim that would be unsupported if the citation were
+    removed; no citation is appended to a sentence that is self-evident or already
+    established by other in-text reasoning. Furthermore, where a [Tn-Rn] passage directly
+    addresses a claim, <think> references and follows that passage rather than substituting
+    "I recall that…" or "It is known that…" for the retrieved content. UNMET: One
+    or more citations in <think> or <answer> are used purely for rhetorical support
+    — e.g., "[T1-R1]" is appended to a well-known textbook fact ("the pericardium
+    surrounds the heart [T1-R1]") that requires no evidence citation, while clinically
+    important claims nearby are left uncited. UNMET also if <think> states a clinical
+    claim using parametric knowledge (e.g., "As I know from training, tamponade causes
+    diastolic RV collapse") for a concept that a retrieved [Tn-Rn] passage explicitly
+    addresses — effectively ignoring the retrieved evidence in favour of memory, or
+    explicitly disagreeing with a retrieved passage without citing a stronger source.
+
+    '
+  type: binary
+  precondition: answer
+  scale_labels:
+  - Unmet
+  - Met
+  active: false
+  auto_drafted: true
+  notes: Auto-merged from [D4] + [D5]. Pearson r=0.946 (n=193) ≥ threshold 0.75
+  pruning_history:
+  - action: merged_into
+    merged_into: D_d3
+    reason: Pearson r=0.795 (n=175) ≥ threshold 0.75
+    timestamp: '2026-04-02T14:04:31.506019'
+- id: D_d2
+  dimension: 4
+  name: Claim Substantiation and Faithfulness
+  description: 'Inspect both the <think> blocks and the <answer> block. Evaluate the
+    extent to which affirmative clinical claims are substantiated by inline [Tn-Rn]
+    citations and whether those citations directly and specifically support the claims.
+    Score 0 if fewer than half of substantive clinical claims carry [Tn-Rn] citations
+    (when a search has been performed), or if one or more citations in <think> or
+    <answer> are attached to claims the passage does not support — e.g., <answer>
+    asserts "pulsus paradoxus is pathognomonic for tamponade" with no citations despite
+    search having returned relevant [T1-Rn] passages, or cites [T1-R3] (a pathophysiology
+    review) for the specific claim that "pulsus paradoxus >10 mmHg is diagnostic",
+    when [T1-R3] discusses only general pericardial disease management without stating
+    that threshold. Score 1 if 50–90% of claims carry citations but one or more key
+    claims in the <answer> block lack [Tn-Rn] support, OR if most citations are congruent
+    but one or two are only loosely related — e.g., a passage about constrictive pericarditis
+    aetiology is cited to support a claim about treatment efficacy. Score 2 if >90%
+    of affirmative clinical claims in both <think> and <answer> sections carry inline
+    [Tn-Rn] citations AND every [Tn-Rn] citation in both <think> and <answer> directly
+    and specifically supports its attached claim.
+
+    '
+  type: ordinal3
+  precondition: answer
+  scale_labels:
+  - Low
+  - Medium
+  - High
+  active: false
+  auto_drafted: true
+  notes: Auto-merged from [D1] + [D2]. Pearson r=0.885 (n=190) ≥ threshold 0.75
+  pruning_history:
+  - action: merged_into
+    merged_into: D_d3
+    reason: Pearson r=0.795 (n=175) ≥ threshold 0.75
+    timestamp: '2026-04-02T14:04:31.506022'
+- id: A_d1
+  dimension: 1
+  name: Information-Gap Justification and Query Alignment
+  description: 'Inspect the Turn 1 <think> block and any subsequent <search> tags.
+    When the model decides to issue a <search>, does it first name a specific piece
+    of information or unresolved uncertainty that cannot be resolved from the question
+    stem alone, thereby justifying the search? If a search is performed, does the
+    query text directly target the specific clinical concept or uncertainty articulated
+    in that <think> block? Score 0 if the model searches without naming a gap, OR
+    if the model names a gap but the query terms differ substantially from the stated
+    gap (e.g., <think> asks about "drug mechanism" but <search> contains "epidemiology
+    incidence"). Score 1 if the model explicitly names a gap, but the query partially
+    addresses the gap or is under-specified (e.g., <search>pericarditis</search> when
+    the gap is specifically about echocardiographic differentiation from tamponade).
+    Score 2 if the model explicitly names a specific, unresolved information gap AND
+    the query text maps precisely to this stated knowledge gap using the most relevant
+    clinical terminology (e.g., <search>diastolic RV collapse echocardiographic cardiac
+    tamponade specificity</search>). If the model decides not to search despite genuine
+    uncertainty that would affect the answer, answering purely from parametric knowledge
+    without acknowledging the gap, this is also scored 0.
+
+    '
+  type: ordinal3
+  precondition: search_performed
+  scale_labels:
+  - No valid gap identified or query misalignment
+  - Gap identified but query is partial or underspecified
+  - Explicit gap identified and precisely targeted query
+  active: false
+  auto_drafted: true
+  notes: Auto-merged from [A6] + [B3]. Pearson r=0.784 (n=186) ≥ threshold 0.75
+  pruning_history:
+  - action: merged_into
+    merged_into: B_d2
+    reason: Pearson r=0.896 (n=188) ≥ threshold 0.75
+    timestamp: '2026-04-02T14:04:31.505765'
+- id: B_d2
+  dimension: 2
+  name: Search Motivation, Necessity, and Alignment
+  description: 'Inspect the <think> block immediately preceding each <search> tag,
+    or the initial <think> block if no search is performed. Does the model identify
+    an information gap or unresolved uncertainty that cannot be resolved from the
+    question stem alone, thereby justifying the search or acknowledging a limitation?
+    If a search is performed, is it epistemically necessary (not redundant or for
+    already known facts) and does the query text directly target the specific clinical
+    concept or uncertainty articulated in that <think> block? Score 0 if the model
+    searches without explicitly naming a gap, or if it names a gap but the query terms
+    differ substantially from the stated gap (e.g., <think> asks about "drug mechanism"
+    but <search> contains "epidemiology incidence"). Also score 0 if <search> appears
+    with no preceding <think> reasoning, if <think> contains only answer-option listing
+    with no articulated motivation, if <think> already knows the answer and issues
+    <search> for verification without explaining why, or if multiple <search> tags
+    address the same resolved question without new uncertainty. If the model decides
+    not to search despite genuine uncertainty that would affect the answer, answering
+    purely from parametric knowledge without acknowledging the gap, this is also scored
+    0. Score 1 if <think> explicitly states an unresolved claim, missing datum, or
+    specific information gap immediately before <search>, demonstrating a genuine
+    uncertainty about a clinically important fact or a need to confirm a claim, AND
+    the query maps precisely to this stated knowledge gap using relevant clinical
+    terminology (e.g., <search>diastolic RV collapse echocardiographic cardiac tamponade
+    specificity</search>). A query partially addressing the gap or being under-specified
+    (e.g., <search>pericarditis</search> when the gap is specifically about echocardiographic
+    differentiation from tamponade) is also scored 0.
+
+    '
+  type: binary
+  precondition: search_performed
+  scale_labels:
+  - Motivation/Necessity/Alignment Deficient
+  - Motivation/Necessity/Alignment Sound
+  active: true
+  auto_drafted: true
+  notes: Auto-merged from [B_d1] + [A_d1]. Pearson r=0.896 (n=188) ≥ threshold 0.75
+- id: D_d3
+  dimension: 4
+  name: Evidence Substantiation and Prioritization
+  description: 'Inspect all [Tn-Rn] citations in <think> and <answer> blocks, and
+    the model''s overall reasoning when search has been performed. Does the model
+    use retrieved evidence for appropriate epistemic purposes, rather than decoratively,
+    prioritize it over parametric knowledge when directly relevant, and does it directly
+    and specifically support claims? Score 0 if fewer than half of substantive clinical
+    claims carry [Tn-Rn] citations (when a search has been performed), or if one or
+    more citations in <think> or <answer> are attached to claims the passage does
+    not support — e.g., <answer> asserts "pulsus paradoxus is pathognomonic for tamponade"
+    with no citations despite search having returned relevant [T1-Rn] passages, or
+    cites [T1-R3] (a pathophysiology review) for the specific claim that "pulsus paradoxus
+    >10 mmHg is diagnostic", when [T1-R3] discusses only general pericardial disease
+    management without stating that threshold. Score 1 if 50–90% of claims carry citations
+    but one or more key claims in the <answer> block lack [Tn-Rn] support, OR if most
+    citations are congruent but one or two are only loosely related — e.g., a passage
+    about constrictive pericarditis aetiology is cited to support a claim about treatment
+    efficacy. Score 2 if >90% of affirmative clinical claims in both <think> and <answer>
+    sections carry inline [Tn-Rn] citations AND every [Tn-Rn] citation in both <think>
+    and <answer> directly and specifically supports its attached claim AND retrieved
+    evidence is prioritized over parametric knowledge when directly relevant, rather
+    than substituting "I recall that…" or "It is known that…" for the retrieved content,
+    or explicitly disagreeing with a retrieved passage without citing a stronger source.
+
+    '
+  type: ordinal3
+  precondition: answer
+  scale_labels:
+  - Poor/Unfaithful Substantiation
+  - Partial/Loose Substantiation
+  - Strong/Faithful Substantiation & Prioritization
+  active: true
+  auto_drafted: true
+  notes: Auto-merged from [D_d1] + [D_d2]. Pearson r=0.795 (n=175) ≥ threshold 0.75

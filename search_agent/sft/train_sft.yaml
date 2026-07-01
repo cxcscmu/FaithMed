@@ -1,0 +1,41 @@
+### Model
+model_name_or_path: /path/to/MedRM/model/Qwen3-1.7B   
+trust_remote_code: true
+enable_thinking: true
+
+### Method
+stage: sft
+do_train: true
+finetuning_type: full
+deepspeed: /path/to/FaithMed/search_agent/sft/ds_z3_config.json  # remove for single-GPU
+
+### Dataset
+dataset: medmix_sft
+dataset_dir: /path/to/SFT   # folder containing dataset_info.json and sft_data.jsonl
+template: qwen3                                                  # must match the model family
+cutoff_len: 8192
+train_on_prompt: false    # only the output (teacher response) contributes to the loss
+preprocessing_num_workers: 16
+
+### Output
+output_dir: /path/to/SFT/qwen3-1.7b/output
+logging_dir: /path/to/SFT/qwen3-1.7b/output/logs
+logging_steps: 10
+save_steps: 500
+save_total_limit: 2
+plot_loss: true
+# overwrite_output_dir: true
+# resume_from_checkpoint: true   # uncomment to resume from latest checkpoint in output_dir
+report_to: wandb
+run_name: qwen3_1.7b_medmix_sft
+
+### Training
+num_train_epochs: 3.0
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 16   # effective batch size = 1 * 16 * num_gpus = 32
+learning_rate: 5.0e-5
+lr_scheduler_type: cosine
+warmup_ratio: 0.01
+bf16: true
+ddp_timeout: 180000000
+

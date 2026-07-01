@@ -1,0 +1,537 @@
+{
+  "iteration": 1,
+  "timestamp": "2026-04-02T13:57:53.340045",
+  "decisions": [
+    {
+      "action": "merge",
+      "rubric_ids": [
+        "B1",
+        "B2"
+      ],
+      "reason": "Pearson r=1.000 (n=189) \u2265 threshold 0.75"
+    },
+    {
+      "action": "merge",
+      "rubric_ids": [
+        "D4",
+        "D5"
+      ],
+      "reason": "Pearson r=0.946 (n=193) \u2265 threshold 0.75"
+    },
+    {
+      "action": "merge",
+      "rubric_ids": [
+        "D1",
+        "D2"
+      ],
+      "reason": "Pearson r=0.885 (n=190) \u2265 threshold 0.75"
+    },
+    {
+      "action": "merge",
+      "rubric_ids": [
+        "A6",
+        "B3"
+      ],
+      "reason": "Pearson r=0.784 (n=186) \u2265 threshold 0.75"
+    },
+    {
+      "action": "remove",
+      "rubric_ids": [
+        "A2"
+      ],
+      "reason": "variance=0.0000 < 0.04 (std=0.000): no RL gradient signal"
+    },
+    {
+      "action": "remove",
+      "rubric_ids": [
+        "A3"
+      ],
+      "reason": "variance=0.0047 < 0.04 (std=0.068): no RL gradient signal"
+    },
+    {
+      "action": "remove",
+      "rubric_ids": [
+        "C5"
+      ],
+      "reason": "variance=0.0239 < 0.04 (std=0.155): no RL gradient signal"
+    },
+    {
+      "action": "remove",
+      "rubric_ids": [
+        "E5"
+      ],
+      "reason": "variance=0.0307 < 0.04 (std=0.175): no RL gradient signal"
+    },
+    {
+      "action": "remove",
+      "rubric_ids": [
+        "B4"
+      ],
+      "reason": "variance=0.0208 AND NA=84.3%: zero signal + rarely applicable"
+    }
+  ],
+  "stats_summary": {
+    "A1": {
+      "n_valid": 299,
+      "na_rate": 0.0033,
+      "mean": 0.9197,
+      "std": 0.2717,
+      "variance": 0.0738,
+      "met_rate": 0.9197,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "A2": {
+      "n_valid": 299,
+      "na_rate": 0.0033,
+      "mean": 2.0,
+      "std": 0.0,
+      "variance": 0.0,
+      "met_rate": null,
+      "flags": {
+        "zero_variance": true,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "A3": {
+      "n_valid": 214,
+      "na_rate": 0.2867,
+      "mean": 1.9953,
+      "std": 0.0682,
+      "variance": 0.0047,
+      "met_rate": null,
+      "flags": {
+        "zero_variance": true,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "A4": {
+      "n_valid": 207,
+      "na_rate": 0.31,
+      "mean": 0.8261,
+      "std": 0.379,
+      "variance": 0.1437,
+      "met_rate": 0.8261,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "A5": {
+      "n_valid": 299,
+      "na_rate": 0.0033,
+      "mean": 1.9632,
+      "std": 0.2052,
+      "variance": 0.0421,
+      "met_rate": null,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "A6": {
+      "n_valid": 288,
+      "na_rate": 0.04,
+      "mean": 0.6632,
+      "std": 0.4726,
+      "variance": 0.2234,
+      "met_rate": 0.6632,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "B1": {
+      "n_valid": 189,
+      "na_rate": 0.37,
+      "mean": 1.8624,
+      "std": 0.5062,
+      "variance": 0.2562,
+      "met_rate": null,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "B2": {
+      "n_valid": 189,
+      "na_rate": 0.37,
+      "mean": 0.9312,
+      "std": 0.2531,
+      "variance": 0.0641,
+      "met_rate": 0.9312,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "B3": {
+      "n_valid": 186,
+      "na_rate": 0.38,
+      "mean": 1.8548,
+      "std": 0.5031,
+      "variance": 0.2531,
+      "met_rate": null,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "B4": {
+      "n_valid": 47,
+      "na_rate": 0.8433,
+      "mean": 0.0213,
+      "std": 0.1443,
+      "variance": 0.0208,
+      "met_rate": 0.0213,
+      "flags": {
+        "zero_variance": true,
+        "high_na": true,
+        "ceiling": false,
+        "floor": true
+      }
+    },
+    "B5": {
+      "n_valid": 139,
+      "na_rate": 0.5367,
+      "mean": 0.8705,
+      "std": 0.3357,
+      "variance": 0.1127,
+      "met_rate": 0.8705,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "B6": {
+      "n_valid": 168,
+      "na_rate": 0.44,
+      "mean": 0.8095,
+      "std": 0.3927,
+      "variance": 0.1542,
+      "met_rate": 0.8095,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "C1": {
+      "n_valid": 171,
+      "na_rate": 0.43,
+      "mean": 0.8246,
+      "std": 0.3803,
+      "variance": 0.1447,
+      "met_rate": 0.8246,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "C2": {
+      "n_valid": 157,
+      "na_rate": 0.4767,
+      "mean": 0.293,
+      "std": 0.4551,
+      "variance": 0.2071,
+      "met_rate": 0.293,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "C3": {
+      "n_valid": 151,
+      "na_rate": 0.4967,
+      "mean": 0.0795,
+      "std": 0.2705,
+      "variance": 0.0732,
+      "met_rate": 0.0795,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "C4": {
+      "n_valid": 165,
+      "na_rate": 0.45,
+      "mean": 0.3758,
+      "std": 0.4843,
+      "variance": 0.2346,
+      "met_rate": 0.3758,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "C5": {
+      "n_valid": 163,
+      "na_rate": 0.4567,
+      "mean": 0.0245,
+      "std": 0.1547,
+      "variance": 0.0239,
+      "met_rate": 0.0245,
+      "flags": {
+        "zero_variance": true,
+        "high_na": false,
+        "ceiling": false,
+        "floor": true
+      }
+    },
+    "C6": {
+      "n_valid": 161,
+      "na_rate": 0.4633,
+      "mean": 0.1056,
+      "std": 0.3073,
+      "variance": 0.0944,
+      "met_rate": 0.1056,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "C7": {
+      "n_valid": 124,
+      "na_rate": 0.5867,
+      "mean": 0.7339,
+      "std": 0.4419,
+      "variance": 0.1953,
+      "met_rate": 0.7339,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "C8": {
+      "n_valid": 122,
+      "na_rate": 0.5933,
+      "mean": 0.1475,
+      "std": 0.3546,
+      "variance": 0.1258,
+      "met_rate": 0.1475,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "C9": {
+      "n_valid": 167,
+      "na_rate": 0.4433,
+      "mean": 0.1377,
+      "std": 0.3446,
+      "variance": 0.1188,
+      "met_rate": 0.1377,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "D1": {
+      "n_valid": 242,
+      "na_rate": 0.1933,
+      "mean": 1.095,
+      "std": 0.9333,
+      "variance": 0.8711,
+      "met_rate": null,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "D2": {
+      "n_valid": 190,
+      "na_rate": 0.3667,
+      "mean": 1.3895,
+      "std": 0.8801,
+      "variance": 0.7746,
+      "met_rate": null,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "D3": {
+      "n_valid": 236,
+      "na_rate": 0.2133,
+      "mean": 0.2966,
+      "std": 0.4568,
+      "variance": 0.2086,
+      "met_rate": 0.2966,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "D4": {
+      "n_valid": 193,
+      "na_rate": 0.3567,
+      "mean": 0.7409,
+      "std": 0.4381,
+      "variance": 0.192,
+      "met_rate": 0.7409,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "D5": {
+      "n_valid": 197,
+      "na_rate": 0.3433,
+      "mean": 0.7259,
+      "std": 0.4461,
+      "variance": 0.199,
+      "met_rate": 0.7259,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "D6": {
+      "n_valid": 299,
+      "na_rate": 0.0033,
+      "mean": 0.9197,
+      "std": 0.2717,
+      "variance": 0.0738,
+      "met_rate": 0.9197,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "E1": {
+      "n_valid": 191,
+      "na_rate": 0.3633,
+      "mean": 0.7435,
+      "std": 0.4367,
+      "variance": 0.1907,
+      "met_rate": 0.7435,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "E2": {
+      "n_valid": 296,
+      "na_rate": 0.0133,
+      "mean": 0.5338,
+      "std": 0.4989,
+      "variance": 0.2489,
+      "met_rate": 0.5338,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "E3": {
+      "n_valid": 188,
+      "na_rate": 0.3733,
+      "mean": 0.2447,
+      "std": 0.4299,
+      "variance": 0.1848,
+      "met_rate": 0.2447,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "E4": {
+      "n_valid": 297,
+      "na_rate": 0.01,
+      "mean": 0.7946,
+      "std": 0.404,
+      "variance": 0.1632,
+      "met_rate": 0.7946,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    },
+    "E5": {
+      "n_valid": 63,
+      "na_rate": 0.79,
+      "mean": 0.0317,
+      "std": 0.1753,
+      "variance": 0.0307,
+      "met_rate": 0.0317,
+      "flags": {
+        "zero_variance": true,
+        "high_na": false,
+        "ceiling": false,
+        "floor": true
+      }
+    },
+    "E6": {
+      "n_valid": 70,
+      "na_rate": 0.7667,
+      "mean": 0.0857,
+      "std": 0.2799,
+      "variance": 0.0784,
+      "met_rate": 0.0857,
+      "flags": {
+        "zero_variance": false,
+        "high_na": false,
+        "ceiling": false,
+        "floor": false
+      }
+    }
+  }
+}
